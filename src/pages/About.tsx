@@ -134,13 +134,13 @@ const About = () => {
         <meta property="og:title" content="About Coolmonie - Nigeria's Trusted Microfinance Institution" />
         <meta property="og:description" content="Discover Coolmonie's journey as a microfinance institution dedicated to supporting small businesses and promoting financial inclusion across Nigeria." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://coolmonie.ng/about" />
-        <meta property="og:image" content="https://coolmonie.ng/5.svg" />
+        <meta property="og:url" content="https://www.coolmonie.ng/about" />
+        <meta property="og:image" content="https://www.coolmonie.ng/5.svg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Coolmonie - Nigeria's Trusted Microfinance Institution" />
         <meta name="twitter:description" content="Learn about our mission, values, and commitment to financial inclusion in Nigeria." />
-        <meta name="twitter:image" content="https://coolmonie.ng/5.svg" />
-        <link rel="canonical" href="https://coolmonie.ng/about" />
+        <meta name="twitter:image" content="https://www.coolmonie.ng/5.svg" />
+        <link rel="canonical" href="https://www.coolmonie.ng/about" />
         <meta name="robots" content="index, follow" />
       </Helmet>
 

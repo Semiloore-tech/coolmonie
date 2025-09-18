@@ -199,13 +199,13 @@ const Contact = () => {
         <meta property="og:title" content="Contact Coolmonie - Expert Financial Support & Advice" />
         <meta property="og:description" content="Get in touch with Coolmonie's expert team for personalized financial solutions. Quick response guaranteed within 24 hours." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://coolmonie.ng/contact" />
-        <meta property="og:image" content="https://coolmonie.ng/10.svg" />
+        <meta property="og:url" content="https://www.coolmonie.ng/contact" />
+        <meta property="og:image" content="https://www.coolmonie.ng/10.svg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Coolmonie - Expert Financial Support" />
         <meta name="twitter:description" content="Contact Nigeria's trusted microfinance institution for expert financial advice and support." />
-        <meta name="twitter:image" content="https://coolmonie.ng/10.svg" />
-        <link rel="canonical" href="https://coolmonie.ng/contact" />
+        <meta name="twitter:image" content="https://www.coolmonie.ng/10.svg" />
+        <link rel="canonical" href="https://www.coolmonie.ng/contact" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">
           {JSON.stringify({

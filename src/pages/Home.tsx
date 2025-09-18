@@ -119,13 +119,13 @@ const Home = () => {
         <meta property="og:title" content="Coolmonie Microfinance Institution - Supporting Dreams in Nigeria" />
         <meta property="og:description" content="Access tailored financial solutions that promote business growth and improve quality of life. Join 10,000+ customers who trust Coolmonie for their financial needs." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://coolmonie.ng" />
-        <meta property="og:image" content="https://coolmonie.ng/14.svg" />
+        <meta property="og:url" content="https://www.coolmonie.ng" />
+        <meta property="og:image" content="https://www.coolmonie.ng/14.svg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Coolmonie Microfinance Institution - Supporting Dreams" />
         <meta name="twitter:description" content="Nigeria's trusted microfinance institution offering quick loans, competitive rates, and exceptional service." />
-        <meta name="twitter:image" content="https://coolmonie.ng/14.svg" />
-        <link rel="canonical" href="https://coolmonie.ng" />
+        <meta name="twitter:image" content="https://www.coolmonie.ng/14.svg" />
+        <link rel="canonical" href="https://www.coolmonie.ng" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
