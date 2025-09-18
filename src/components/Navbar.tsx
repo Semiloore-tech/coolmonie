@@ -29,8 +29,8 @@ const Navbar = () => {
             "@context": "https://schema.org",
             "@type": "FinancialService",
             name: "Coolmonie Microfinance Institution",
-            url: "https://coolmonie.ng",
-            logo: "https://coolmonie.ng/coolmonielogo.svg",
+            url: "https://www.coolmonie.ng",
+            logo: "https://www.coolmonie.ng/coolmonielogo.svg",
             description:
               "Coolmonie is Nigeria's trusted microfinance institution offering loans, salary advances, and asset financing.",
             address: {
