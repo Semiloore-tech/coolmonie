@@ -32,9 +32,9 @@ const Services = () => {
 
       try {
         await Promise.all(imagePromises);
-        setImagesLoaded({ 
-          hero: true, 
-          benefits: true 
+        setImagesLoaded({
+          hero: true,
+          benefits: true
         });
         setAllImagesLoaded(true);
       } catch (error) {
@@ -138,13 +138,13 @@ const Services = () => {
         <meta property="og:title" content="Financial Services - Loans & Advances | Coolmonie Microfinance" />
         <meta property="og:description" content="Get working capital, salary advances, and asset loans with quick approval and competitive rates. Use our loan calculator to plan your financing." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://coolmonie.com/services" />
-        <meta property="og:image" content="https://coolmonie.com/7.svg" />
+        <meta property="og:url" content="https://coolmonie.ng/services" />
+        <meta property="og:image" content="https://coolmonie.ng/7.svg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Financial Services - Loans & Advances | Coolmonie" />
         <meta name="twitter:description" content="Working capital, salary advance, and asset loans with quick approval and competitive rates." />
-        <meta name="twitter:image" content="https://coolmonie.com/7.svg" />
-        <link rel="canonical" href="https://coolmonie.com/services" />
+        <meta name="twitter:image" content="https://coolmonie.ng/7.svg" />
+        <link rel="canonical" href="https://coolmonie.ng/services" />
         <meta name="robots" content="index, follow" />
       </Helmet>
 
@@ -168,7 +168,7 @@ const Services = () => {
               Our Financial Services
             </h1>
             <p className="text-xl lg:text-2xl text-indigo-100 max-w-3xl mx-auto leading-relaxed">
-              Comprehensive financial solutions designed to help you achieve your 
+              Comprehensive financial solutions designed to help you achieve your
               personal and business goals with confidence and convenience.
             </p>
           </div>
@@ -183,7 +183,7 @@ const Services = () => {
               Complete Financial Solutions
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From micro loans to investment services, we offer a full range of 
+              From micro loans to investment services, we offer a full range of
               financial products tailored to meet your unique needs.
             </p>
           </div>
@@ -191,19 +191,18 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className={`bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 ${
-                  services.length === 3 && index === 2 ? 'lg:col-span-2 lg:mx-auto' : ''
+                className={`bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 ${services.length === 3 && index === 2 ? 'lg:col-span-2 lg:mx-auto' : ''
                   }`}
-                 style={{
+                style={{
                   animationDelay: `${index * 0.15}s`,
                   ['--index' as string]: index,
                 }}
               >
                 <div className="flex items-start space-x-6 animate-fade-in-up">
                   <div className="text-white bg-gradient-to-br from-indigo-800 to-indigo-800 p-3 rounded-lg shadow-lg flex-shrink-0" style={{
-                  animationDelay: `${index * 0.15}s`,
-                  ['--index' as string]: index,
-                }}>
+                    animationDelay: `${index * 0.15}s`,
+                    ['--index' as string]: index,
+                  }}>
                     {service.icon}
                   </div>
                   <div className="flex-1">
@@ -260,7 +259,7 @@ const Services = () => {
                 Why Choose Our Services?
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                At Coolmonie, we're committed to providing exceptional value 
+                At Coolmonie, we're committed to providing exceptional value
                 through innovative products, competitive pricing, and outstanding service.
               </p>
               <div className="space-y-4">
@@ -300,7 +299,7 @@ const Services = () => {
               Simple Application Process
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Getting started with Coolmonie is easy. Follow these simple steps 
+              Getting started with Coolmonie is easy. Follow these simple steps
               to access our financial services.
             </p>
           </div>
@@ -332,28 +331,28 @@ const Services = () => {
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r text-white relative overflow-hidden" style={{
-                  background: "linear-gradient(to bottom right, #6A67D1, #4B48A1)",
-                }}>
+        background: "linear-gradient(to bottom right, #6A67D1, #4B48A1)",
+      }}>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6 relative z-10">
             Ready to Get Started?
           </h2>
           <p className="text-xl mb-8 text-indigo-100 max-w-2xl mx-auto relative z-10">
-            Choose the service that's right for you and take the first step 
+            Choose the service that's right for you and take the first step
             toward achieving your financial goals.
           </p>
           <div className="space-x-4 relative z-10">
             <button
-                  onClick={() => {
-                    setShowModal(true);
-                  }}
-                  className="bg-white text-indigo-900 px-8 py-4 rounded-lg font-semibold hover:bg-indigo-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center justify-center"
-                  aria-label="Apply for loans with Coolmonie"
-                >
-                  Apply for Loans
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </button>
+              onClick={() => {
+                setShowModal(true);
+              }}
+              className="bg-white text-indigo-900 px-8 py-4 rounded-lg font-semibold hover:bg-indigo-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-flex items-center justify-center"
+              aria-label="Apply for loans with Coolmonie"
+            >
+              Apply for Loans
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </button>
             <Link
               to="/contact#contact-form"
               className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-indigo-900 transition-all duration-300 inline-flex items-center justify-center"
@@ -365,7 +364,7 @@ const Services = () => {
         </div>
       </section>
       {/* Loan Modal */}
-            <LoanApplicationModal isOpen={showModal} onClose={() => setShowModal(false)} />
+      <LoanApplicationModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </div>
   );
 };

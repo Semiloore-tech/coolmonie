@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import {
-  MapPin, Phone, Mail, Clock, Send, MessageSquare, User, 
+  MapPin, Phone, Mail, Clock, Send, MessageSquare, User,
   Building2, CheckCircle
 } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
@@ -44,9 +44,9 @@ const Contact = () => {
 
       try {
         await Promise.all(imagePromises);
-        setImagesLoaded({ 
-          contact: true, 
-          faq: true 
+        setImagesLoaded({
+          contact: true,
+          faq: true
         });
         setAllImagesLoaded(true);
       } catch (error) {
@@ -70,14 +70,14 @@ const Contact = () => {
     if (isError) setIsError(false);
   };
 
-   useEffect(() => {
+  useEffect(() => {
     // Initialize EmailJS once when the component mounts
     emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!formRef.current) {
       setIsError(true);
       return;
@@ -88,7 +88,7 @@ const Contact = () => {
     setIsSent(false);
 
     try {
-       await emailjs.sendForm(
+      await emailjs.sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID!,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID!,
         formRef.current
@@ -124,7 +124,7 @@ const Contact = () => {
       icon: <Mail className="h-8 w-8" />,
       title: "Email Us",
       details: [
-        "coolmoniemfi@gmail.com",
+        "info@coolmonie.ng",
       ]
     },
   ];
@@ -193,34 +193,34 @@ const Contact = () => {
       {/* SEO Meta Tags */}
       <Helmet>
         <title>Contact Coolmonie - Get Expert Financial Advice & Support</title>
-        <meta name="description" content="Contact Coolmonie Microfinance Institution for expert financial advice and support. Call +234 802 386 7498, email coolmoniemfi@gmail.com, or use our contact form. Quick response within 24 hours guaranteed." />
+        <meta name="description" content="Contact Coolmonie Microfinance Institution for expert financial advice and support. Call +234 802 386 7498, email info@coolmonie.ng, or use our contact form. Quick response within 24 hours guaranteed." />
         <meta name="keywords" content="contact Coolmonie, microfinance Nigeria contact, financial advisor contact, loan inquiry Nigeria, customer support microfinance, Coolmonie phone number email" />
         <meta name="author" content="Coolmonie Microfinance Institution" />
         <meta property="og:title" content="Contact Coolmonie - Expert Financial Support & Advice" />
         <meta property="og:description" content="Get in touch with Coolmonie's expert team for personalized financial solutions. Quick response guaranteed within 24 hours." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://coolmonie.com/contact" />
-        <meta property="og:image" content="https://coolmonie.com/10.svg" />
+        <meta property="og:url" content="https://coolmonie.ng/contact" />
+        <meta property="og:image" content="https://coolmonie.ng/10.svg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Coolmonie - Expert Financial Support" />
         <meta name="twitter:description" content="Contact Nigeria's trusted microfinance institution for expert financial advice and support." />
-        <meta name="twitter:image" content="https://coolmonie.com/10.svg" />
-        <link rel="canonical" href="https://coolmonie.com/contact" />
+        <meta name="twitter:image" content="https://coolmonie.ng/10.svg" />
+        <link rel="canonical" href="https://coolmonie.ng/contact" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FinancialService",
-          "name": "Coolmonie Microfinance Institution",
-          "telephone": "+234 802 386 7498",
-          "email": "coolmoniemfi@gmail.com",
-          "contactPoint": {
-            "@type": "ContactPoint",
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FinancialService",
+            "name": "Coolmonie Microfinance Institution",
             "telephone": "+234 802 386 7498",
-            "contactType": "customer service",
-            "availableLanguage": "English"
-          }
-        })}
+            "email": "info@coolmonie.ng",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+234 802 386 7498",
+              "contactType": "customer service",
+              "availableLanguage": "English"
+            }
+          })}
         </script>
       </Helmet>
 
@@ -233,7 +233,7 @@ const Contact = () => {
               Get In Touch
             </h1>
             <p className="text-xl lg:text-2xl text-indigo-100 max-w-3xl mx-auto leading-relaxed">
-              We're here to help you with all your financial needs. 
+              We're here to help you with all your financial needs.
               Contact us today to speak with our expert team.
             </p>
           </div>
@@ -304,7 +304,7 @@ const Contact = () => {
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Have a question or need assistance? Fill out the form and our team will get back to you within 24 hours.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="bg-gradient-to-br from-indigo-800 to-indigo-800 p-3 rounded-lg shadow-lg">
@@ -315,7 +315,7 @@ const Contact = () => {
                     <p className="text-gray-600">We respond to all inquiries within 24 hours</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center space-x-4">
                   <div className="bg-gradient-to-br from-indigo-800 to-indigo-800 p-3 rounded-lg shadow-lg">
                     <User className="h-6 w-6 text-white" />

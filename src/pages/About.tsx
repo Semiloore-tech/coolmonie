@@ -34,11 +34,11 @@ const About = () => {
 
       try {
         await Promise.all(imagePromises);
-        setImagesLoaded({ 
-          hero: true, 
-          mission: true, 
-          values: true, 
-          team: true 
+        setImagesLoaded({
+          hero: true,
+          mission: true,
+          values: true,
+          team: true
         });
         setAllImagesLoaded(true);
       } catch (error) {
@@ -134,13 +134,13 @@ const About = () => {
         <meta property="og:title" content="About Coolmonie - Nigeria's Trusted Microfinance Institution" />
         <meta property="og:description" content="Discover Coolmonie's journey as a microfinance institution dedicated to supporting small businesses and promoting financial inclusion across Nigeria." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://coolmonie.com/about" />
-        <meta property="og:image" content="https://coolmonie.com/5.svg" />
+        <meta property="og:url" content="https://coolmonie.ng/about" />
+        <meta property="og:image" content="https://coolmonie.ng/5.svg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Coolmonie - Nigeria's Trusted Microfinance Institution" />
         <meta name="twitter:description" content="Learn about our mission, values, and commitment to financial inclusion in Nigeria." />
-        <meta name="twitter:image" content="https://coolmonie.com/5.svg" />
-        <link rel="canonical" href="https://coolmonie.com/about" />
+        <meta name="twitter:image" content="https://coolmonie.ng/5.svg" />
+        <link rel="canonical" href="https://coolmonie.ng/about" />
         <meta name="robots" content="index, follow" />
       </Helmet>
 
@@ -242,7 +242,7 @@ const About = () => {
               Our Core Values
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              These fundamental principles guide our decisions and shape our culture, 
+              These fundamental principles guide our decisions and shape our culture,
               ensuring we always act in the best interests of our customers and communities.
             </p>
           </div>
@@ -284,8 +284,8 @@ const About = () => {
                 Why You Should Trust Our Team
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Our experienced team combines expertise in finance, technology, 
-                and customer service. We are committed to your financial success and have 
+                Our experienced team combines expertise in finance, technology,
+                and customer service. We are committed to your financial success and have
                 the credentials to back it up.
               </p>
               {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -310,23 +310,23 @@ const About = () => {
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r text-white relative overflow-hidden" style={{
-                  background: "linear-gradient(to bottom right, #6A67D1, #4B48A1)",
-                }}>
+        background: "linear-gradient(to bottom right, #6A67D1, #4B48A1)",
+      }}>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6 relative z-10">
             Join Our Growing Family
           </h2>
           <p className="text-xl mb-8 text-indigo-100 max-w-2xl mx-auto relative z-10">
-            Become part of our success story. Experience the difference that personalized 
+            Become part of our success story. Experience the difference that personalized
             service and innovative solutions can make in your financial journey.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
             <button
-                onClick={() => setShowModal(true)}
-                className="bg-white text-indigo-900 px-8 py-4 rounded-lg font-semibold hover:bg-indigo-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                Get Started Today
+              onClick={() => setShowModal(true)}
+              className="bg-white text-indigo-900 px-8 py-4 rounded-lg font-semibold hover:bg-indigo-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            >
+              Get Started Today
             </button>
             <a
               href="/contact"
@@ -338,7 +338,7 @@ const About = () => {
         </div>
       </section>
       {/* Loan Modal */}
-            <LoanApplicationModal isOpen={showModal} onClose={() => setShowModal(false)} />
+      <LoanApplicationModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </div>
   );
 };

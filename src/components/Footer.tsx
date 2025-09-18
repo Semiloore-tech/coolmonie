@@ -17,12 +17,12 @@ const Footer = () => {
           <div className="col-span-1 lg:col-span-2 relative z-10">
             <div className="flex items-center space-x-3 mb-4">
               <Link to="/">
-                <img 
-                  src="coolmoniefooter.svg" 
-                  alt="Coolmonie" 
+                <img
+                  src="coolmoniefooter.svg"
+                  alt="Coolmonie"
                   className="h-20 w-30 object-contain"
                 />
-                  {/* <span className="text-2xl font-bold">MFI LTD</span> */}
+                {/* <span className="text-2xl font-bold">MFI LTD</span> */}
               </Link>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">

@@ -39,8 +39,8 @@ const Career = () => {
 
       try {
         await Promise.all(imagePromises);
-        setImagesLoaded({ 
-          hero: true 
+        setImagesLoaded({
+          hero: true
         });
         setAllImagesLoaded(true);
       } catch (error) {
@@ -145,38 +145,38 @@ const Career = () => {
         <meta property="og:title" content="Careers at Coolmonie - Join Nigeria's Leading Microfinance Team" />
         <meta property="og:description" content="Discover exciting career opportunities at Coolmonie. Join our mission to promote financial inclusion and support small businesses across Nigeria." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://coolmonie.com/career" />
-        <meta property="og:image" content="https://coolmonie.com/16.svg" />
+        <meta property="og:url" content="https://coolmonie.ng/career" />
+        <meta property="og:image" content="https://coolmonie.ng/16.svg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Careers at Coolmonie - Join Our Team" />
         <meta name="twitter:description" content="Apply for exciting career opportunities at Nigeria's trusted microfinance institution." />
-        <meta name="twitter:image" content="https://coolmonie.com/16.svg" />
-        <link rel="canonical" href="https://coolmonie.com/career" />
+        <meta name="twitter:image" content="https://coolmonie.ng/16.svg" />
+        <link rel="canonical" href="https://coolmonie.ng/career" />
         <meta name="robots" content="index, follow" />
         <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "JobPosting",
-          "hiringOrganization": {
-            "@type": "Organization",
-            "name": "Coolmonie Microfinance Institution"
-          },
-          "title": "Various Positions Available",
-          "description": "Join Coolmonie's team of financial professionals dedicated to promoting financial inclusion in Nigeria.",
-          "employmentType": "FULL_TIME",
-          "jobLocation": {
-            "@type": "Place",
-            "address": "Nigeria"
-          }
-        })}
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "JobPosting",
+            "hiringOrganization": {
+              "@type": "Organization",
+              "name": "Coolmonie Microfinance Institution"
+            },
+            "title": "Various Positions Available",
+            "description": "Join Coolmonie's team of financial professionals dedicated to promoting financial inclusion in Nigeria.",
+            "employmentType": "FULL_TIME",
+            "jobLocation": {
+              "@type": "Place",
+              "address": "Nigeria"
+            }
+          })}
         </script>
       </Helmet>
 
       <section className="bg-gradient-to-br text-white py-20 relative overflow-hidden" style={{
-          backgroundImage: imagesLoaded.hero ? 'url("/16.svg")' : 'none',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}>
+        backgroundImage: imagesLoaded.hero ? 'url("/16.svg")' : 'none',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}>
         <div className="absolute inset-0 opacity-20">
           {!imagesLoaded.hero && (
             <div className="absolute inset-0 flex items-center justify-center">
