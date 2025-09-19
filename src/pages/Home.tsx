@@ -113,8 +113,14 @@ const Home = () => {
       {/* SEO Meta Tags */}
       <Helmet>
         <title>Coolmonie Microfinance Institution - Supporting Dreams in Nigeria</title>
-        <meta name="description" content="Coolmonie is Nigeria's trusted microfinance institution offering working capital, salary advance, and asset loans. Quick approval, competitive rates, and exceptional customer service for small businesses and individuals." />
-        <meta name="keywords" content="microfinance Nigeria, small business loans, salary advance, asset financing, working capital, quick loans, competitive interest rates, financial inclusion" />
+        <meta
+          name="description"
+          content="Coolmonie is Nigeria's trusted microfinance institution offering working capital, salary advance, and asset loans. Quick approval, competitive rates, and exceptional customer service for small businesses and individuals."
+        />
+        <meta
+          name="keywords"
+          content="microfinance Nigeria, small business loans, salary advance, asset financing, working capital, quick loans, competitive interest rates, financial inclusion"
+        />
         <meta name="author" content="Coolmonie Microfinance Institution" />
         <meta property="og:title" content="Coolmonie Microfinance Institution - Supporting Dreams in Nigeria" />
         <meta property="og:description" content="Access tailored financial solutions that promote business growth and improve quality of life. Join 10,000+ customers who trust Coolmonie for their financial needs." />
@@ -128,7 +134,43 @@ const Home = () => {
         <link rel="canonical" href="https://www.coolmonie.ng" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        {/* ✅ Structured Data (Organization / FinancialService) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FinancialService",
+              "name": "Coolmonie Microfinance Institution",
+              "url": "https://www.coolmonie.ng",
+              "logo": "https://www.coolmonie.ng/14.svg",
+              "description":
+                "Coolmonie is Nigeria's trusted microfinance institution offering working capital, salary advance, and asset loans. Quick approval, competitive rates, and exceptional customer service for small businesses and individuals.",
+              "telephone": "+234-704-910-5291",
+              "email": "info@coolmonie.ng",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Adeoni Estate Street",
+                "addressLocality": "Lagos",
+                "addressRegion": "LA",
+                "postalCode": "112107",
+                "addressCountry": "NG"
+              },
+              "sameAs": [
+                "https://www.facebook.com/profile.php?id=61554264450454",
+                "https://x.com/CoolMonieMFI",
+                "https://www.instagram.com/coolmoniemfi"
+              ],
+              "areaServed": {
+                "@type": "Country",
+                "name": "Nigeria"
+              }
+            }),
+          }}
+        />
       </Helmet>
+
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-indigo-800 via-indigo-900 to-sky-950 text-white overflow-hidden min-h-screen flex items-center">

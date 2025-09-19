@@ -212,11 +212,14 @@ const Contact = () => {
             "@context": "https://schema.org",
             "@type": "FinancialService",
             "name": "Coolmonie Microfinance Institution",
-            "telephone": "+234 802 386 7498",
+            "url": "https://www.coolmonie.ng/contact",
+            "logo": "https://www.coolmonie.ng/14.svg",
+            "description": "Contact Coolmonie Microfinance Institution for expert financial advice, loans, and customer support.",
+            "telephone": "+234-704-910-5291",
             "email": "info@coolmonie.ng",
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+234 802 386 7498",
+              "telephone": "+234-704-910-5291",
               "contactType": "customer service",
               "availableLanguage": "English"
             }

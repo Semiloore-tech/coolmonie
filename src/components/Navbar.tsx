@@ -21,35 +21,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* ✅ Structured Data for SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FinancialService",
-            name: "Coolmonie Microfinance Institution",
-            url: "https://www.coolmonie.ng",
-            logo: "https://www.coolmonie.ng/coolmonielogo.svg",
-            description:
-              "Coolmonie is Nigeria's trusted microfinance institution offering loans, salary advances, and asset financing.",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Adeoni Estate Street",
-              addressLocality: "Lagos",
-              addressRegion: "LA",
-              postalCode: "112107",
-              addressCountry: "NG",
-            },
-            contactPoint: {
-              "@type": "ContactPoint",
-              telephone: "+234-704-910-5291",
-              contactType: "Customer Service",
-            },
-          }),
-        }}
-      />
-
       <nav className="bg-white/95 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-indigo-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20">

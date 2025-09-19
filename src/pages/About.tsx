@@ -142,6 +142,70 @@ const About = () => {
         <meta name="twitter:image" content="https://www.coolmonie.ng/5.svg" />
         <link rel="canonical" href="https://www.coolmonie.ng/about" />
         <meta name="robots" content="index, follow" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "AboutPage",
+              "mainEntity": {
+                "@type": "FinancialService",
+                "name": "Coolmonie Microfinance Institution",
+                "url": "https://www.coolmonie.ng/about",
+                "logo": "https://www.coolmonie.ng/14.svg",
+                "description": "Coolmonie is Nigeria's trusted microfinance institution, supporting small businesses and low-income earners through accessible loans and financial literacy.",
+                "foundingDate": "2010",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Adeoni Estate Street",
+                  "addressLocality": "Lagos",
+                  "addressRegion": "LA",
+                  "postalCode": "112107",
+                  "addressCountry": "NG"
+                },
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+234 802 386 7498",
+                  "contactType": "Customer Service",
+                  "availableLanguage": "English"
+                },
+                "memberOf": [
+                  {
+                    "@type": "Organization",
+                    "name": "Nigeria Deposit Insurance Corporation (NDIC)"
+                  }
+                ],
+                "award": [
+                  "Best Microfinance Bank Award 2023",
+                  "Excellence in Customer Service Award",
+                  "Financial Inclusion Champion 2024"
+                ]
+              },
+              "about": [
+                {
+                  "@type": "CreativeWork",
+                  "name": "Our Mission",
+                  "text": "To be a trusted financial partner for small businesses and low income earners, empowering them with appropriate microfinance solutions that foster business growth and improve quality of life."
+                },
+                {
+                  "@type": "CreativeWork",
+                  "name": "Our Vision",
+                  "text": "To provide tailored financial solutions that promote financial inclusion and support small businesses in a manner that delivers value to customers and stakeholders."
+                },
+                {
+                  "@type": "CreativeWork",
+                  "name": "Milestones",
+                  "text": "Founded in 2010, reached 5,000 customers by 2015, launched digital banking in 2020, and now serve over 10,000 customers with ₦2.5B+ in loans disbursed."
+                },
+                {
+                  "@type": "CreativeWork",
+                  "name": "Core Values",
+                  "text": "Teamwork, Integrity, Passion, Innovation, Customer Service"
+                }
+              ]
+            }),
+          }}
+        />
       </Helmet>
 
       {/* Hero Section */}

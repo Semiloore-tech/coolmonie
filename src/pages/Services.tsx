@@ -146,6 +146,98 @@ const Services = () => {
         <meta name="twitter:image" content="https://www.coolmonie.ng/7.svg" />
         <link rel="canonical" href="https://www.coolmonie.ng/services" />
         <meta name="robots" content="index, follow" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FinancialService",
+              "name": "Coolmonie Microfinance Institution",
+              "url": "https://www.coolmonie.ng/services",
+              "logo": "https://www.coolmonie.ng/14.svg",
+              "description": "Coolmonie provides financial services in Nigeria, including Working Capital loans, Salary Advance, and Asset Loans. Fast approval, competitive interest rates, and no hidden fees.",
+              "serviceType": "Microfinance and Loan Services",
+              "areaServed": {
+                "@type": "Country",
+                "name": "Nigeria"
+              },
+              "provider": {
+                "@type": "Organization",
+                "name": "Coolmonie Microfinance Institution",
+                "url": "https://www.coolmonie.ng",
+                "sameAs": [
+                  "https://www.facebook.com/profile.php?id=61554264450454",
+                  "https://x.com/CoolMonieMFI",
+                  "https://www.instagram.com/coolmoniemfi"
+                ],
+              },
+              "offers": [
+                {
+                  "@type": "Service",
+                  "name": "Working Capital Loan",
+                  "description": "Flexible short-term loans to support small businesses. Quick approval, no hidden fees, competitive interest rates."
+                },
+                {
+                  "@type": "Service",
+                  "name": "Salary Advance",
+                  "description": "Access up to 2 months' salary in advance and pay back over 6 months. Fast disbursement and fair rates."
+                },
+                {
+                  "@type": "Service",
+                  "name": "Asset Loan",
+                  "description": "Finance business vehicles, equipment, or tools to grow your business faster. Quick approval and ownership benefits."
+                }
+              ],
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Coolmonie Financial Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Working Capital Loan",
+                      "description": "Loans for business working capital with flexible repayment terms."
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Salary Advance",
+                      "description": "Salary advance loans for employees, repayable in up to 6 months."
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Asset Loan",
+                      "description": "Asset financing for business equipment, vehicles, and tools."
+                    }
+                  }
+                ]
+              },
+              "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.coolmonie.ng"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://www.coolmonie.ng/services"
+                  }
+                ]
+              }
+            }),
+          }}
+        />
       </Helmet>
 
       {/* Hero Section */}

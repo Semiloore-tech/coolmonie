@@ -153,23 +153,51 @@ const Career = () => {
         <meta name="twitter:image" content="https://www.coolmonie.ng/16.svg" />
         <link rel="canonical" href="https://www.coolmonie.ng/career" />
         <meta name="robots" content="index, follow" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "JobPosting",
-            "hiringOrganization": {
-              "@type": "Organization",
-              "name": "Coolmonie Microfinance Institution"
-            },
-            "title": "Various Positions Available",
-            "description": "Join Coolmonie's team of financial professionals dedicated to promoting financial inclusion in Nigeria.",
-            "employmentType": "FULL_TIME",
-            "jobLocation": {
-              "@type": "Place",
-              "address": "Nigeria"
-            }
-          })}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "JobPosting",
+              "title": formData.position || "Frontend Developer",
+              "description": `We are looking for a skilled ${formData.position || "Frontend Developer"} to join our team at Coolmonie. Help us build innovative financial solutions to empower small businesses in Nigeria.`,
+              "identifier": {
+                "@type": "PropertyValue",
+                "name": "Coolmonie",
+                "value": `JOB-${formData.position ? formData.position.replace(/\s+/g, "-").toUpperCase() : "12345"}`
+              },
+              "datePosted": new Date().toISOString().split("T")[0],
+              "validThrough": new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(), // 30 days from now
+              "employmentType": "FULL_TIME",
+              "hiringOrganization": {
+                "@type": "Organization",
+                "name": "Coolmonie Microfinance Institution",
+                "sameAs": "https://www.coolmonie.ng",
+                "logo": "https://www.coolmonie.ng/coolmonielogo.svg"
+              },
+              "jobLocation": {
+                "@type": "Place",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Adeoni Estate Street",
+                  "addressLocality": "Lagos",
+                  "addressRegion": "LA",
+                  "postalCode": "112107",
+                  "addressCountry": "NG"
+                }
+              },
+              "baseSalary": {
+                "@type": "MonetaryAmount",
+                "currency": "NGN",
+                "value": {
+                  "@type": "QuantitativeValue",
+                  "value": 77000,
+                  "unitText": "MONTH"
+                }
+              }
+            }),
+          }}
+        />
       </Helmet>
 
       <section className="bg-gradient-to-br text-white py-20 relative overflow-hidden" style={{
